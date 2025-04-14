@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 name: nyc_rental
-
+conda_env: conda.yml
 entry_points:
   main:
     parameters:
@@ -12,18 +11,3 @@ entry_points:
     command: >
       python main.py csv=${csv} ref=${ref} kl_threshold=${kl_threshold} min_price=${min_price} max_price=${max_price}
 
-=======
-name: nyc_airbnb
-conda_env: conda.yml
-
-entry_points:
-  main:
-    parameters:
-      hydra_options:
-        description: Other configuration parameters to override
-        type: str
-        default: ''
-      
-    command: >-
-      python main.py csv=${csv} ref=${ref} kl_threshold=${kl_threshold} min_price=${min_price} max_price=${max_price}
->>>>>>> aab7b00e4707e066178388ea367629903a115f72
