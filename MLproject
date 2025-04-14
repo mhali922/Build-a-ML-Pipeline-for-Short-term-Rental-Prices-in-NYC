@@ -5,10 +5,10 @@
   entry_points:
     main:
       parameters:
-        csv: str
-        ref: str
+        csv: path
+        ref: path
         kl_threshold: float
         min_price: int
         max_price: int
-      command: "python main.py --csv {csv} --ref {ref} --kl_threshold {kl_threshold} --min_price {min_price} --max_price {max_price}"
+      command: ""python main.py csv={csv} ref={ref} kl_threshold={kl_threshold} min_price={min_price} max_price={max_price}
 
