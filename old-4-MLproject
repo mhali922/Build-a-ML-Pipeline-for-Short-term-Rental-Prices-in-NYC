@@ -1,0 +1,7 @@
+entry_points:
+  main:
+    parameters:
+      overrides: {type: str}
+    command: >
+      python main.py ${overrides}
+

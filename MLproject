@@ -1,13 +1,13 @@
-name: rental_price_prediction
+name: rental-prices-pipeline
 
 entry_points:
   main:
     parameters:
-      csv: {type: str}
-      ref: {type: str}
-      kl_threshold: {type: float}
-      min_price: {type: int}
-      max_price: {type: int}
+      main.execute_steps: {type: str}
+      data.sample: {type: str}
+      etl.min_price: {type: int}
+      etl.max_price: {type: int}
+      data_check.kl_threshold: {type: float}
     command: >
-      python main.py csv=${csv} ref=${ref} kl_threshold=${kl_threshold} min_price=${min_price} max_price=${max_price}
+      python main.py +main.execute_steps=${main.execute_steps} +data.sample=${data.sample} +etl.min_price=${etl.min_price} +etl.max_price=${etl.max_price} +data_check.kl_threshold=${data_check.kl_threshold}
 
