@@ -8,6 +8,6 @@ entry_points:
       kl_threshold: {type: float}
       min_price: {type: int}
       max_price: {type: int}
-    command: >
+    command: >-
       python main.py csv=${csv} ref=${ref} kl_threshold=${kl_threshold} min_price=${min_price} max_price=${max_price}
 
