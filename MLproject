@@ -5,8 +5,8 @@
   entry_points:
     main:
       parameters:
-        csv: path
-        ref: path
+        csv: str
+        ref: str
         kl_threshold: float
         min_price: int
         max_price: int
