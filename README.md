@@ -6,3 +6,6 @@ https://wandb.ai/academic_application
 user id - mohd-hasnain86-ejada-org
 ![Uploading image.png…]()
 
+https://wandb.ai/mohd-hasnain86-ejada/exercise_6/runs/hxmitdvp?nw=nwusermohdhasnain86
+
+
