@@ -1,13 +1,13 @@
-name: nyc_airbnb
-conda_env: conda.yml
+name: nyc_rental
 
 entry_points:
   main:
     parameters:
-      hydra_options:
-        description: Other configuration parameters to override
-        type: str
-        default: ''
-      
-    command: >-
-      python main.py $(echo {hydra_options})
+      csv: {type: str}
+      ref: {type: str}
+      kl_threshold: {type: float}
+      min_price: {type: int}
+      max_price: {type: int}
+    command: >
+      python main.py csv=${csv} ref=${ref} kl_threshold=${kl_threshold} min_price=${min_price} max_price=${max_price}
+
